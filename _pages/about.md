@@ -1,40 +1,47 @@
-﻿<!-- 
-Rewrite this page strictly based on my CV at /files/HoangCaoPhong_CV.pdf.
-Profile: Undergraduate Computer Science – Artificial Intelligence student.
-Target: AI labs, research groups, scholarships.
--->
-
-
----
+﻿---
 permalink: /
-title: "AI Research & Computer Vision"
+title: "Hoang Cao Phong"
 author_profile: true
-redirect_from: 
-  - /about/
-  - /about.html
 ---
 
-I am an undergraduate Computer Science student at the University of Science, HCMUS, with a specialization in Artificial Intelligence. My research focuses on **Computer Vision**, **Natural Language Processing**, and **Deep Learning systems**.
+## About
+
+I am an undergraduate Computer Science student at the University of Science, Ho Chi Minh City National University, specializing in Artificial Intelligence. My research focuses on **Computer Vision**, **Natural Language Processing**, and **Deep Learning systems** with an emphasis on practical applications and technical rigor.
+
+---
 
 ## Research Interests
 
-My work bridges theoretical AI concepts with practical applications:
+- **Computer Vision**: Image classification, object detection, semantic segmentation, and visual understanding
+- **Natural Language Processing**: Language models, text representation learning, and multilingual systems  
+- **Deep Learning**: Neural architecture design, training optimization, and transfer learning
+- **AI Systems**: End-to-end system development, evaluation, and reproducibility
 
-- **Computer Vision**: Image classification, object detection, and semantic understanding
-- **Natural Language Processing**: Language models, text representation, and multilingual systems
-- **Deep Learning**: Neural architectures, optimization, and AI decision-making systems
+---
 
-## Academic Approach
+## Academic Direction
 
-I approach research with technical rigor and an emphasis on reproducibility. My goal is to contribute meaningful insights to the AI community through publications, open-source implementations, and collaborative research with AI laboratories and research groups.
+I am pursuing advanced research in machine learning and AI systems, with focus on:
 
-## Current Focus
+- Contributing peer-reviewed publications to the research community
+- Developing reproducible, open-source implementations
+- Collaborating with established AI research laboratories
+- Preparing for graduate-level research and study
 
-I am actively seeking opportunities with:
-- **AI research labs** and academic groups
-- **Hackathons** focused on AI and machine learning
-- **Scholarship programs** supporting AI research
+---
+
+## Current Opportunities
+
+I am actively seeking:
+- **AI research positions** with academic labs and research groups
 - **Research internships** in computer vision and NLP
+- **Scholarship programs** supporting AI research
+- **Collaborative projects** advancing AI systems
 
-Explore my [publications](/publications/), [projects](/portfolio/), and [CV](/cv/) to learn more about my research contributions and technical work.
+---
 
+## Explore
+
+- [**Publications**](/publications/)  Recent research contributions
+- [**Portfolio**](/portfolio/)  Projects and implementations  
+- [**CV**](/cv/)  Full curriculum vitae
