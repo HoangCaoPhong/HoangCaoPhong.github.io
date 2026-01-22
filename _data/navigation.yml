@@ -1,13 +1,18 @@
-﻿# Navigation menu for the website
-#
-# Academic sections only - organized by research relevance
+﻿# Unified site-wide navigation
+# Appears consistently on all pages including collections
 
 main:
+  - title: "About"
+    url: /
+
   - title: "Publications"
     url: /publications/
 
-  - title: "CV"
-    url: /cv/
-
   - title: "Talks"
     url: /talks/
+
+  - title: "Blog Posts"
+    url: /year-archive/
+
+  - title: "CV"
+    url: /cv/
