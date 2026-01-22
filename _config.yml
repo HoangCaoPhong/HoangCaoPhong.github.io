@@ -23,7 +23,7 @@ repository               : "HoangCaoPhong/HoangCaoPhong.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "images/avatar.jpeg"
   name             : "Hoang Cao Phong"
   pronouns         : # example: "she/her"  
   bio              : "Undergraduate Computer Science student specializing in AI. Research interests: Computer Vision, Natural Language Processing, and Deep Learning systems."
@@ -58,7 +58,7 @@ author:
   # Social media
   artstation       : # Username
   bluesky          : "bsky.app" # Replace this with you Bluesky username
-  facebook         : # Username
+  facebook         : "HoangCaoPhongVN"
   flickr           : # Username
   foursquare       : # Username
   goodreads        : # Username
