@@ -1,33 +1,43 @@
 ﻿---
 permalink: /
-title: "AI Research & Computer Vision"
+title: "About"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-I am an undergraduate Computer Science student at the University of Science, HCMUS, with a specialization in Artificial Intelligence. My research focuses on **Computer Vision**, **Natural Language Processing**, and **Deep Learning systems**.
+## Academic Background
 
-## Research Interests
+I am an undergraduate Computer Science student at the University of Science, Ho Chi Minh City National University, specializing in Artificial Intelligence. My academic work centers on the development and analysis of deep learning systems, with emphasis on practical applications in computer vision and natural language processing.
 
-My work bridges theoretical AI concepts with practical applications:
+## Research Focus
 
-- **Computer Vision**: Image classification, object detection, and semantic understanding
-- **Natural Language Processing**: Language models, text representation, and multilingual systems
-- **Deep Learning**: Neural architectures, optimization, and AI decision-making systems
+My research interests lie at the intersection of representation learning and applied AI systems:
 
-## Academic Approach
+**Computer Vision**
+- Image classification and feature extraction
+- Object detection and scene understanding
+- Multimodal learning approaches
 
-I approach research with technical rigor and an emphasis on reproducibility. My goal is to contribute meaningful insights to the AI community through publications, open-source implementations, and collaborative research with AI laboratories and research groups.
+**Natural Language Processing**
+- Sequence modeling and language representations
+- Information extraction from text
+- Cross-lingual and multilingual systems
 
-## Current Focus
+**Deep Learning Fundamentals**
+- Neural architecture design and optimization
+- Training dynamics and convergence analysis
+- Transfer learning and domain adaptation
 
-I am actively seeking opportunities with:
-- **AI research labs** and academic groups
-- **Hackathons** focused on AI and machine learning
-- **Scholarship programs** supporting AI research
-- **Research internships** in computer vision and NLP
+**AI Systems**
+- End-to-end system design for production environments
+- Evaluation metrics and benchmarking
+- Reproducibility and methodological rigor
 
-Explore my [publications](/publications/), [projects](/portfolio/), and [CV](/cv/) to learn more about my research contributions and technical work.
+## Academic Trajectory
+
+I am preparing for graduate-level research in AI and machine learning. My current work emphasizes technical depth, reproducibility, and contribution to the broader research community through publications and open-source implementations. I am interested in pursuing advanced study and research positions with established AI laboratories.
+
+See [publications](/publications/), [portfolio](/portfolio/), and [CV](/cv/) for additional details on current and past research work.
 
