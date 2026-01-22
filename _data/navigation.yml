@@ -1,18 +1,12 @@
 ﻿# Unified site-wide navigation
-# Consistent across all pages and collections
+# Academic undergraduate AI student
 
 main:
   - title: "About"
     url: /
 
-  - title: "Publications"
-    url: /publications/
-
   - title: "Works"
     url: /works/
-
-  - title: "Talks"
-    url: /talks/
 
   - title: "Blog Posts"
     url: /year-archive/
