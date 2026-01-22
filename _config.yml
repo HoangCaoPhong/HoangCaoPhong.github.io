@@ -23,10 +23,10 @@ repository               : "HoangCaoPhong/HoangCaoPhong.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "/images/avatar.jpeg"
+  avatar           : "/images/avatar.jpg"
   name             : "Hoang Cao Phong"
   pronouns         : # example: "she/her"  
-  bio              : "Undergraduate Computer Science student specializing in AI. Research interests: Computer Vision, Natural Language Processing, and Deep Learning systems."
+  bio              : "Undergraduate IT-CS student specializing in AI. Research interests: Computer Vision, Natural Language Processing, and Deep Learning systems."
   location         : "Ho Chi Minh City, Vietnam"
   employer         : "HCMUS | AI Research Focus"
   uri              : # URL
