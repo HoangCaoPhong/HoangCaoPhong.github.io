@@ -1,5 +1,5 @@
 ﻿# Unified site-wide navigation
-# Appears consistently on all pages including collections
+# Consistent across all pages and collections
 
 main:
   - title: "About"
@@ -7,6 +7,9 @@ main:
 
   - title: "Publications"
     url: /publications/
+
+  - title: "Projects"
+    url: /projects/
 
   - title: "Talks"
     url: /talks/
