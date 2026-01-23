@@ -1,4 +1,4 @@
----
+ï»¿---
 layout: default
 title: "Curriculum Vitae"
 permalink: /cv/
@@ -81,6 +81,6 @@ redirect_from:
   </div>
 
   <div class="cv-fallback">
-    <p><strong>Lýu ?:</strong> N?u PDF không hi?n th?, vui l?ng <a href="{{ cv_path }}" target="_blank">t?i xu?ng tr?c ti?p</a>.</p>
+    <p><strong>Note:</strong> If the PDF does not display, please <a href="{{ cv_path }}" target="_blank">download directly</a>.</p>
   </div>
 </div>
