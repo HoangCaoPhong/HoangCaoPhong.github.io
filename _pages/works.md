@@ -13,23 +13,26 @@ author_profile: true
     margin: 2rem 0;
   }
   
+  /* Light mode */
   .work-card {
     border: 1px solid #ddd;
     border-radius: 6px;
     padding: 1.5rem;
-    background: #fafafa;
-    transition: box-shadow 0.2s;
+    background: #fff;
+    transition: all 0.2s ease;
   }
   
   .work-card:hover {
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+    border-color: #ccc;
   }
   
   .work-card h3 {
     margin-top: 0;
     font-size: 1.15rem;
     line-height: 1.4;
-    color: #222;
+    color: #1a1a1a;
+    font-weight: 600;
   }
   
   .work-description {
@@ -45,12 +48,13 @@ author_profile: true
     font-family: "Monaco", monospace;
     margin-top: 1rem;
     padding-top: 1rem;
-    border-top: 1px solid #e0e0e0;
+    border-top: 1px solid #e8e8e8;
   }
   
   .tech-tag {
     display: inline-block;
-    background: #f0f0f0;
+    background: #f5f5f5;
+    color: #333;
     padding: 0.25rem 0.6rem;
     margin: 0.25rem 0.25rem 0.25rem 0;
     border-radius: 3px;
@@ -58,28 +62,33 @@ author_profile: true
   }
 
   /* Dark mode support */
-    @media (prefers-color-scheme: dark) {
+  @media (prefers-color-scheme: dark) {
     .work-card {
-      background: #2d2d2d;
-      border-color: #444;
+      background: #333;
+      border-color: #555;
+    }
+
+    .work-card:hover {
+      box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+      border-color: #666;
     }
 
     .work-card h3 {
-      color: #eee;
+      color: #f0f0f0;
     }
 
     .work-description {
-      color: #999;
+      color: #bbb;
     }
 
     .work-tech {
-      color: #888;
-      border-top-color: #444;
+      color: #999;
+      border-top-color: #555;
     }
 
     .tech-tag {
       background: #444;
-      color: #aaa;
+      color: #ddd;
     }
   }
 </style>
