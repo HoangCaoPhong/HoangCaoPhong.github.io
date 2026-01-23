@@ -1,4 +1,4 @@
-﻿---
+---
 layout: archive
 title: "Works"
 permalink: /works/
@@ -58,14 +58,14 @@ author_profile: true
   }
 
   /* Dark mode support */
-  @media (prefers-color-scheme: dark) {
+    @media (prefers-color-scheme: dark) {
     .work-card {
       background: #2d2d2d;
       border-color: #444;
     }
 
     .work-card h3 {
-      color: #222;
+      color: #eee;
     }
 
     .work-description {
