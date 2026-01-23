@@ -6,7 +6,7 @@ author_profile: true
 
 ## About
 
-I am an undergraduate IT-CS student at the Vietnam National University, HCMC - University of Science, specializing in Artificial Intelligence. My research focuses on **Computer Vision**, **Natural Language Processing**, and **Deep Learning systems** with an emphasis on practical applications and technical rigor.
+I am a B.Sc. student specializing in Artificial Intelligence at the Vietnam National University, Ho Chi Minh City  University of Science. My interests focus on **Computer Vision**, **Natural Language Processing**, and **Deep Learning**, with an emphasis on building end-to-end, deployable AI systems that bridge research ideas and real-world applications.
 
 ---
 
