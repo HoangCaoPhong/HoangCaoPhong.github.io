@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default
 title: "Curriculum Vitae"
 permalink: /cv/
@@ -63,22 +63,24 @@ redirect_from:
   }
 </style>
 
+{% capture cv_path %}{{ site.baseurl }}/files/HoangCaoPhong_CV.pdf{% endcapture %}
+
 <div class="cv-viewer-container">
   <h1>Curriculum Vitae</h1>
   
   <div class="cv-controls">
-    <a href="/files/HoangCaoPhong_CV.pdf" download class="cv-btn"> Download PDF</a>
-    <a href="/files/HoangCaoPhong_CV.pdf" target="_blank" class="cv-btn"> Open Fullscreen</a>
+    <a href="{{ cv_path }}" download class="cv-btn"> Download PDF</a>
+    <a href="{{ cv_path }}" target="_blank" class="cv-btn"> Open Fullscreen</a>
   </div>
 
   <div class="cv-embed-wrapper">
     <iframe 
-      src="/files/HoangCaoPhong_CV.pdf#toolbar=1&navpanes=0&zoom=77"
+      src="{{ cv_path }}#toolbar=1&navpanes=0&zoom=77"
       allow="fullscreen">
     </iframe>
   </div>
 
   <div class="cv-fallback">
-    <p><strong>Lưu ý:</strong> Nếu PDF không hiển thị, vui lòng <a href="/files/HoangCaoPhong_CV.pdf" target="_blank">tải xuống trực tiếp</a>.</p>
+    <p><strong>L�u ?:</strong> N?u PDF kh�ng hi?n th?, vui l?ng <a href="{{ cv_path }}" target="_blank">t?i xu?ng tr?c ti?p</a>.</p>
   </div>
 </div>
