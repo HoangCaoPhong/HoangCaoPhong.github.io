@@ -458,14 +458,22 @@ author_profile: true
 
 ---
 
-## EXPERIENCES & ACTIVITIES
+# EXPERIENCES & ACTIVITIES
 
-- **Google Developer Group on Campus  HCMUS** | *MC & Graphic Designer* | Oct 2024  Ongoing
+1) Google Developer Group on Campus – HCMUS | MC & Graphic Designer | Oct 2024 – Ongoing
+   - Served as MC for technical workshops and community events, introducing sessions and coordinating program flow.
+   - Designed visuals for events, workshops, and social media using Illustrator, Photoshop, GIMP, and Premiere.
+   - Collaborated with developers and organizers to align technical presentations with branding and audience engagement.
 
-- **Library of University of Science  VNUHCM** | *Member of Technical Department* | Oct 2024  Ongoing
+2) Library of University of Science – VNUHCM | Member of Technical Department | Oct 2024 – Ongoing
+   - Set up audiovisual systems and online streaming for library events.
+   - Produced videos, newsletters, and social media updates to boost student engagement.
+   - Conducted data analysis and research to improve library services.
 
-- **Strong PC** | *Co-founder, Management Board* | Sep 2025  Ongoing
-  - Student Laptop Service & Optimization
+3) Strong PC – Student Laptop Service & Optimization | Co-founder, Management Board | Sep 2025 – Ongoing
+   - Co-founded and led a student-run laptop support project providing maintenance and optimization services.
+   - Managed operations, task assignments, and financial planning across technical and communication teams.
+   - Directed internal documentation, workflow development, and collaboration planning with the University Library.
 
 ---
 
