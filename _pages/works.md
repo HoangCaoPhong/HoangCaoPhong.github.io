@@ -29,6 +29,7 @@ author_profile: true
     margin-top: 0;
     font-size: 1.15rem;
     line-height: 1.4;
+    color: #222;
   }
   
   .work-description {
@@ -54,6 +55,32 @@ author_profile: true
     margin: 0.25rem 0.25rem 0.25rem 0;
     border-radius: 3px;
     font-size: 0.8rem;
+  }
+
+  /* Dark mode support */
+  @media (prefers-color-scheme: dark) {
+    .work-card {
+      background: #2d2d2d;
+      border-color: #444;
+    }
+
+    .work-card h3 {
+      color: #222;
+    }
+
+    .work-description {
+      color: #999;
+    }
+
+    .work-tech {
+      color: #888;
+      border-top-color: #444;
+    }
+
+    .tech-tag {
+      background: #444;
+      color: #aaa;
+    }
   }
 </style>
 

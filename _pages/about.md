@@ -42,6 +42,5 @@ I am actively seeking:
 
 ## Explore
 
-- [**Publications**](/publications/)  Recent research contributions
-- [**Portfolio**](/portfolio/)  Projects and implementations  
+- [**Works**](/works/)  Projects and implementations  
 - [**CV**](/cv/)  Full curriculum vitae
