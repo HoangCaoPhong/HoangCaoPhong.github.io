@@ -63,7 +63,7 @@ redirect_from:
   }
 </style>
 
-{% capture cv_path %}{{ site.baseurl }}/files/HoangCaoPhong_CV.pdf{% endcapture %}
+{% capture cv_path %}{{ site.baseurl }}/files/HoangCaoPhong_CV_2026.pdf{% endcapture %}
 
 <div class="cv-viewer-container">
   <h1>Curriculum Vitae</h1>
