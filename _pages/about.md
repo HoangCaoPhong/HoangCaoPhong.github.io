@@ -6,14 +6,17 @@ author_profile: true
 
 ## About
 
-I am a B.Sc. student specializing in Artificial Intelligence at the Vietnam National University, Ho Chi Minh City  University of Science. My interests focus on **Computer Vision**, **Natural Language Processing**, and **Deep Learning**, with an emphasis on building end-to-end, deployable AI systems that bridge research ideas and real-world applications.
+I am a B.Sc. student pursuing the Computer Science – Artificial Intelligence track at the Vietnam National University, Ho Chi Minh City University of Science (HCMUS). My interests focus on **Computer Vision**, **Natural Language Processing**, **Cyber Security** and **Deep Learning**
+
+I am currently involved in research activities at the **UIT Information Security Lab (InSecLab)**. I am particularly interested in building end-to-end, deployable AI systems that bridge research ideas and real-world applications.
 
 ---
 
-## Research Interests
+## Research & Technical Interests
 
 - **Computer Vision**: Image classification, object detection, semantic segmentation, and visual understanding
-- **Natural Language Processing**: Language models, text representation learning, and multilingual systems  
+- **Natural Language Processing**: Language models, text representation learning, and multilingual systems
+- **Cyber Security**: intelligent security analysis, model evaluation, and multimodal AI for security tasks
 - **Deep Learning**: Neural architecture design, training optimization, and transfer learning
 - **AI Systems**: End-to-end system development, evaluation, and reproducibility
 
@@ -33,6 +36,7 @@ I am pursuing advanced research in machine learning and AI systems, with focus o
 ## Current Opportunities
 
 I am actively seeking:
+
 - **AI research positions** with academic labs and research groups
 - **Research internships** in computer vision and NLP
 - **Scholarship programs** supporting AI research
@@ -42,5 +46,5 @@ I am actively seeking:
 
 ## Explore
 
-- [**Works**](/works/)  Projects and implementations  
-- [**CV**](/cv/)  Full curriculum vitae
+- [**Project**](/project/) Projects and implementations
+- [**CV**](/cv/) Full curriculum vitae
