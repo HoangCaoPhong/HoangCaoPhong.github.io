@@ -74,13 +74,18 @@ function updateNav() {
 $(window).on('resize', function () {
   updateNav();
 });
-screen.orientation.addEventListener("change", function () {
-  updateNav();
-});
 
 $btn.on('click', function () {
   $hlinks.toggleClass('hidden');
   $(this).toggleClass('close');
 });
+
+// Some browsers and embedded mobile webviews do not expose screen.orientation.
+// Listen for its change event only when the API is available.
+if (screen.orientation && typeof screen.orientation.addEventListener === "function") {
+  screen.orientation.addEventListener("change", function () {
+    updateNav();
+  });
+}
 
 updateNav();
