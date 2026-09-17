@@ -1,4 +1,4 @@
-﻿---
+---
 permalink: /
 title: "Hoang Cao Phong"
 author_profile: true

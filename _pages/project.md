@@ -165,6 +165,10 @@ author_profile: true
     background: #1e5a6d;
   }
 
+  .sidebar-link[hidden] {
+    display: none;
+  }
+
   .sidebar-overlay {
     position: fixed;
     top: 0;
@@ -329,8 +333,8 @@ author_profile: true
   </div>
 
   <div class="sidebar-section">
-    <a href="#" id="sidebarGithubLink" class="sidebar-link" target="_blank">View on GitHub</a>
-    <a href="#" id="sidebarWebsiteLink" class="sidebar-link" target="_blank" hidden>Visit Website</a>
+    <a href="#" id="sidebarGithubLink" class="sidebar-link" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+    <a href="#" id="sidebarWebsiteLink" class="sidebar-link" target="_blank" rel="noopener noreferrer" hidden>Visit Website</a>
   </div>
 </aside>
 
@@ -366,25 +370,25 @@ author_profile: true
       title: 'RTSP/RTP Real-Time Video Streaming Server',
       description: 'Real-time video streaming system handling network constraints and variable bandwidth. Implements RTSP state machine, RTP packet encoding, and adaptive frame buffering.',
       tech: ['RTSP', 'RTP', 'UDP/TCP', 'Network Protocols', 'Streaming', 'MJPEG'],
-      github: 'https://github.com'
+      github: null
     },
     maybao: {
       title: 'MAYBAO  E-commerce Clothing Website',
       description: 'Complete e-commerce platform for clothing retail with secure transactions and content protection. Features responsive design, SSL encryption, payment integration, and invisible watermarking.',
       tech: ['WordPress', 'WooCommerce', 'SSL', 'Payment Integration', 'Security'],
-      github: 'https://github.com'
+      github: null
     },
     poker: {
       title: 'Poker Simulator Game',
       description: 'Multi-mode poker game implementation with functional AI opponents and core game mechanics. Includes card shuffling algorithms, hand ranking logic, and AI decision-making.',
       tech: ['C++', 'Game Development', 'Algorithms', 'AI Logic', 'Git'],
-      github: 'https://github.com'
+      github: null
     },
     reverseng: {
       title: 'Reverse Engineering  Cracking Project',
       description: 'Binary analysis and CrackMe disassembly to extract serial validation algorithms. Includes static analysis, x86 assembly reconstruction, and keygen tool development.',
       tech: ['OllyDbg', 'IDA Pro', 'x86 Assembly', 'Binary Analysis', 'C++'],
-      github: 'https://github.com'
+      github: null
     }
   };
 
@@ -417,8 +421,13 @@ author_profile: true
           .map(tech => `<span class="tech-tag">${tech}</span>`)
           .join('');
         
-        // Update GitHub link
-        sidebarGithubLink.href = project.github;
+        // Show a repository link only when a real project URL is available
+        if (project.github) {
+          sidebarGithubLink.href = project.github;
+          sidebarGithubLink.hidden = false;
+        } else {
+          sidebarGithubLink.hidden = true;
+        }
 
         // Show a live demo link when the project provides one
         if (project.website) {
