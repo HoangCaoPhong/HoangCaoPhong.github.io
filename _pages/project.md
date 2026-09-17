@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Project"
+title: "Projects"
 permalink: /project/
 author_profile: true
 ---
@@ -13,12 +13,12 @@ author_profile: true
     margin: 2rem 0;
   }
   
-  /* Light mode */
+  /* Cards */
   .work-card {
-    border: 1px solid #ddd;
+    border: 1px solid var(--global-border-color);
     border-radius: 6px;
     padding: 1.5rem;
-    background: #fff;
+    background: var(--global-bg-color);
     transition: all 0.2s ease;
     cursor: pointer;
   }
@@ -32,50 +32,53 @@ author_profile: true
     margin-top: 0;
     font-size: 1.15rem;
     line-height: 1.4;
-    color: #1a1a1a;
+    color: var(--global-text-color);
     font-weight: 600;
   }
   
   .work-description {
     font-size: 0.95rem;
     line-height: 1.6;
-    color: #555;
+    color: var(--global-text-color);
     margin: 0.75rem 0;
   }
   
   .work-tech {
     font-size: 0.85rem;
-    color: #666;
+    color: var(--global-text-color-light);
     font-family: "Monaco", monospace;
     margin-top: 1rem;
     padding-top: 1rem;
-    border-top: 1px solid #e8e8e8;
+    border-top: 1px solid var(--global-border-color);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
   }
   
   .tech-tag {
     display: inline-block;
-    background: #f5f5f5;
-    color: #333;
+    background: var(--global-code-background-color);
+    color: var(--global-code-text-color);
     padding: 0.25rem 0.6rem;
     margin: 0.25rem 0.25rem 0.25rem 0;
     border-radius: 3px;
     font-size: 0.8rem;
   }
 
-  /* Sidebar styles - Light mode */
+  /* Project details sidebar */
   .project-sidebar {
     position: fixed;
     right: 0;
     top: 0;
     width: 400px;
     height: 100vh;
-    background: #fff;
-    border-left: 1px solid #ddd;
+    background: var(--global-bg-color);
+    border-left: 1px solid var(--global-border-color);
     box-shadow: -2px 0 8px rgba(0,0,0,0.1);
     overflow-y: auto;
     transform: translateX(100%);
     transition: transform 0.3s ease-in-out;
-    z-index: 1000;
+    z-index: 1001;
     padding: 2rem 1.5rem;
   }
 
@@ -91,24 +94,25 @@ author_profile: true
     border: none;
     font-size: 1.5rem;
     cursor: pointer;
-    color: #333;
+    color: var(--global-text-color);
     padding: 0;
     width: 32px;
     height: 32px;
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 1;
   }
 
   .sidebar-close:hover {
-    color: #000;
+    color: var(--global-link-color-hover);
   }
 
   .sidebar-title {
     margin-top: 0;
     margin-bottom: 1rem;
     font-size: 1.5rem;
-    color: #1a1a1a;
+    color: var(--global-text-color);
     font-weight: 600;
     padding-right: 2rem;
   }
@@ -120,7 +124,7 @@ author_profile: true
   .sidebar-section-title {
     font-size: 0.9rem;
     text-transform: uppercase;
-    color: #666;
+    color: var(--global-text-color-light);
     font-weight: 600;
     margin-bottom: 0.75rem;
     letter-spacing: 0.05em;
@@ -129,13 +133,13 @@ author_profile: true
   .sidebar-description {
     font-size: 0.95rem;
     line-height: 1.6;
-    color: #555;
+    color: var(--global-text-color);
     margin-bottom: 1.5rem;
   }
 
   .sidebar-tech {
     font-size: 0.85rem;
-    color: #666;
+    color: var(--global-text-color-light);
   }
 
   .tech-list {
@@ -180,75 +184,12 @@ author_profile: true
     visibility: visible;
   }
 
-  /* Dark mode support */
-  @media (prefers-color-scheme: dark) {
-    .work-card {
-      background: #333;
-      border-color: #555;
-    }
+  html[data-theme="dark"] .work-card:hover {
+    box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+  }
 
-    .work-card:hover {
-      box-shadow: 0 6px 16px rgba(0,0,0,0.3);
-      border-color: #666;
-    }
-
-    .work-card h3 {
-      color: #f0f0f0;
-    }
-
-    .work-description {
-      color: #bbb;
-    }
-
-    .work-tech {
-      color: #999;
-      border-top-color: #555;
-    }
-
-    .tech-tag {
-      background: #444;
-      color: #ddd;
-    }
-
-    /* Dark mode sidebar */
-    .project-sidebar {
-      background: #2a2a2a;
-      border-left: 1px solid #444;
-      box-shadow: -2px 0 8px rgba(0,0,0,0.4);
-    }
-
-    .sidebar-close {
-      color: #bbb;
-    }
-
-    .sidebar-close:hover {
-      color: #fff;
-    }
-
-    .sidebar-title {
-      color: #f0f0f0;
-    }
-
-    .sidebar-section-title {
-      color: #999;
-    }
-
-    .sidebar-description {
-      color: #bbb;
-    }
-
-    .sidebar-tech {
-      color: #999;
-    }
-
-    .sidebar-link {
-      background: #0ea1c5;
-      color: #fff;
-    }
-
-    .sidebar-link:hover {
-      background: #0d7a94;
-    }
+  .work-tech .tech-tag {
+    margin: 0;
   }
 
   /* Mobile responsive */
@@ -259,77 +200,111 @@ author_profile: true
   }
 </style>
 
-## Projects
-
 <div class="works-grid">
 
-  <div class="work-card" data-project="windyai">
-    <h3>WindyAI  Smart Travel Planner</h3>
+  <div class="work-card" data-project="breast-cancer" role="button" tabindex="0">
+    <h3>Breast Cancer Classification</h3>
+    <p class="work-description">
+      Interpretable breast cancer classification with a from-scratch Decision Tree and an interactive FastAPI-React demo.
+    </p>
+    <div class="work-tech">
+      <span class="tech-tag">Python</span>
+      <span class="tech-tag">Decision Trees</span>
+      <span class="tech-tag">scikit-learn</span>
+      <span class="tech-tag">FastAPI</span>
+      <span class="tech-tag">React</span>
+    </div>
+  </div>
+
+  <div class="work-card" data-project="windyai" role="button" tabindex="0">
+    <h3>WindyAI - Smart Travel Planner</h3>
     <p class="work-description">
       Generate optimal travel itineraries under multiple constraints (time, budget, spatial, preferences).
     </p>
     <div class="work-tech">
-      PyTorch  ResNet  CNN  Optimization  Heuristics
+      <span class="tech-tag">PyTorch</span>
+      <span class="tech-tag">ResNet</span>
+      <span class="tech-tag">CNN</span>
+      <span class="tech-tag">Optimization</span>
+      <span class="tech-tag">Heuristics</span>
     </div>
   </div>
 
-  <div class="work-card" data-project="emotion">
+  <div class="work-card" data-project="emotion" role="button" tabindex="0">
     <h3>Vietnamese Facial Emotion Recognition</h3>
     <p class="work-description">
       Facial emotion recognition system optimized for Vietnamese subjects, addressing dataset bias in Western-centric models.
     </p>
     <div class="work-tech">
-      CNN  OpenCV  Transfer Learning  Computer Vision
+      <span class="tech-tag">CNN</span>
+      <span class="tech-tag">OpenCV</span>
+      <span class="tech-tag">Transfer Learning</span>
+      <span class="tech-tag">Computer Vision</span>
     </div>
   </div>
 
-  <div class="work-card" data-project="mindmeeting">
-    <h3>MindMeetingAI  Intelligent Meeting Assistant</h3>
+  <div class="work-card" data-project="mindmeeting" role="button" tabindex="0">
+    <h3>MindMeetingAI - Intelligent Meeting Assistant</h3>
     <p class="work-description">
       Automate meeting transcription, summarization, and semantic question-answering with privacy-preserving analysis.
     </p>
     <div class="work-tech">
-      Whisper  RAG  ChromaDB  LLaMA3  NLP
+      <span class="tech-tag">Whisper</span>
+      <span class="tech-tag">RAG</span>
+      <span class="tech-tag">LLM Systems</span>
+      <span class="tech-tag">NLP</span>
     </div>
   </div>
 
-  <div class="work-card" data-project="rtsp">
+  <div class="work-card" data-project="rtsp" role="button" tabindex="0">
     <h3>RTSP/RTP Real-Time Video Streaming Server</h3>
     <p class="work-description">
       Real-time video streaming system handling network constraints and variable bandwidth conditions.
     </p>
     <div class="work-tech">
-      RTSP  RTP  UDP/TCP  Network Protocols  Streaming
+      <span class="tech-tag">RTSP</span>
+      <span class="tech-tag">RTP</span>
+      <span class="tech-tag">UDP/TCP</span>
+      <span class="tech-tag">Streaming</span>
     </div>
   </div>
 
-  <div class="work-card" data-project="maybao">
+  <div class="work-card" data-project="maybao" role="button" tabindex="0">
     <h3>MAYBAO  E-commerce Clothing Website</h3>
     <p class="work-description">
       Complete e-commerce platform for clothing retail with secure transactions and content protection.
     </p>
     <div class="work-tech">
-      WordPress  WooCommerce  SSL  Payment Integration
+      <span class="tech-tag">WordPress</span>
+      <span class="tech-tag">WooCommerce</span>
+      <span class="tech-tag">SSL</span>
+      <span class="tech-tag">Payments</span>
     </div>
   </div>
 
-  <div class="work-card" data-project="poker">
+  <div class="work-card" data-project="poker" role="button" tabindex="0">
     <h3>Poker Simulator Game</h3>
     <p class="work-description">
       Multi-mode poker game with functional AI opponents and core game mechanics.
     </p>
     <div class="work-tech">
-      C++  Game Development  Algorithms  AI Logic
+      <span class="tech-tag">C++</span>
+      <span class="tech-tag">Game Development</span>
+      <span class="tech-tag">Algorithms</span>
+      <span class="tech-tag">AI Logic</span>
     </div>
   </div>
 
-  <div class="work-card" data-project="reverseng">
+  <div class="work-card" data-project="reverseng" role="button" tabindex="0">
     <h3>Reverse Engineering  Cracking Project</h3>
     <p class="work-description">
       Analyze and crack CrackMe binaries to extract serial validation algorithms through reverse engineering.
     </p>
     <div class="work-tech">
-      OllyDbg  IDA Pro  x86 Assembly  Binary Analysis
+      <span class="tech-tag">OllyDbg</span>
+      <span class="tech-tag">IDA Pro</span>
+      <span class="tech-tag">x86 Assembly</span>
+      <span class="tech-tag">Binary Analysis</span>
     </div>
   </div>
 
@@ -340,7 +315,7 @@ author_profile: true
 
 <!-- Project Sidebar -->
 <aside class="project-sidebar" id="projectSidebar">
-  <button class="sidebar-close" id="sidebarClose">&times;</button>
+  <button class="sidebar-close" id="sidebarClose" aria-label="Close project details">&times;</button>
   <h2 class="sidebar-title" id="sidebarTitle">Project Title</h2>
   
   <div class="sidebar-section">
@@ -355,29 +330,37 @@ author_profile: true
 
   <div class="sidebar-section">
     <a href="#" id="sidebarGithubLink" class="sidebar-link" target="_blank">View on GitHub</a>
+    <a href="#" id="sidebarWebsiteLink" class="sidebar-link" target="_blank" hidden>Visit Website</a>
   </div>
 </aside>
 
 <script>
   // Project data
   const projectData = {
+    'breast-cancer': {
+      title: 'Breast Cancer Classification',
+      description: 'Led a five-person team in building an interpretable breast cancer classification system and interactive ML demo. Implemented Decision Trees from scratch with Gini and entropy splitting, evaluated depth-performance trade-offs with stratified 5-fold cross-validation on 569 samples, and helped deliver 93.86% accuracy on 114 held-out samples with 16.7% fewer leaves than the baseline.',
+      tech: ['Python', 'Decision Trees', 'Gini/Entropy', 'scikit-learn', 'FastAPI', 'React'],
+      github: 'https://github.com/HoangCaoPhong/breast-cancer-machine-learning',
+      website: 'http://bc-ml.zapto.org'
+    },
     windyai: {
-      title: 'WindyAI  Smart Travel Planner',
-      description: 'Generate optimal travel itineraries under multiple constraints (time, budget, spatial, preferences). Leverages constrained optimization with greedy heuristics, ResNet-based landmark recognition, and auxiliary service integration.',
+      title: 'WindyAI - Smart Travel Planner',
+      description: 'Led a five-person team in designing an end-to-end AI decision support system for travel planning. The system models time, budget, spatial, and preference constraints; combines a Greedy + Lookahead heuristic with multi-factor POI scoring; and feeds ResNet-based landmark recognition into downstream planning decisions.',
       tech: ['PyTorch', 'ResNet', 'CNN', 'Optimization', 'Heuristics', 'Computer Vision'],
-      github: 'https://github.com'
+      github: 'https://github.com/HoangCaoPhong/WindyAI-Smart_Travel_Planner'
     },
     emotion: {
       title: 'Vietnamese Facial Emotion Recognition',
-      description: 'CNN-based facial emotion recognition system optimized for Vietnamese subjects. Addresses dataset bias in Western-centric models through transfer learning and comprehensive bias analysis.',
-      tech: ['CNN', 'OpenCV', 'Transfer Learning', 'Computer Vision', 'TensorFlow'],
-      github: 'https://github.com'
+      description: 'Developed a real-time CNN and OpenCV facial emotion recognition system for Vietnamese faces. The project studies cross-cultural generalization and FER2013 dataset bias, then adapts pre-trained models through transfer learning, layer freezing, and low learning-rate fine-tuning.',
+      tech: ['CNN', 'OpenCV', 'Transfer Learning', 'Computer Vision', 'FER2013'],
+      github: 'https://github.com/HoangCaoPhong/realtime-facial-emotion-recognition-vietnamese-faces'
     },
     mindmeeting: {
-      title: 'MindMeetingAI  Intelligent Meeting Assistant',
-      description: 'Automate meeting transcription, summarization, and semantic question-answering with privacy-preserving analysis. Integrates Vietnamese ASR, RAG with vector embeddings, and local LLM inference.',
-      tech: ['Whisper', 'RAG', 'ChromaDB', 'LLaMA3', 'NLP', 'Ollama'],
-      github: 'https://github.com'
+      title: 'MindMeetingAI - Intelligent Meeting Assistant',
+      description: 'Designed an end-to-end NLP system for Vietnamese meeting transcription, structured summarization, and semantic question answering. It combines Whisper ASR, transcript normalization, sentence embeddings, a vector database, RAG, and local LLM inference for privacy-preserving analysis.',
+      tech: ['Whisper', 'RAG', 'LLM Systems', 'Sentence Transformers', 'Vector Databases', 'NLP'],
+      github: 'https://github.com/HoangCaoPhong/MindMeetingAI'
     },
     rtsp: {
       title: 'RTSP/RTP Real-Time Video Streaming Server',
@@ -412,6 +395,11 @@ author_profile: true
   const sidebarDescription = document.getElementById('sidebarDescription');
   const sidebarTechList = document.getElementById('sidebarTechList');
   const sidebarGithubLink = document.getElementById('sidebarGithubLink');
+  const sidebarWebsiteLink = document.getElementById('sidebarWebsiteLink');
+
+  // Move fixed layers outside the page stacking context so they stay above the masthead.
+  document.body.appendChild(overlay);
+  document.body.appendChild(sidebar);
 
   // Add click listeners to all project cards
   document.querySelectorAll('.work-card').forEach(card => {
@@ -426,15 +414,30 @@ author_profile: true
         
         // Update tech list
         sidebarTechList.innerHTML = project.tech
-          .map(tech => \<span class="tech-tag">\</span>\)
+          .map(tech => `<span class="tech-tag">${tech}</span>`)
           .join('');
         
         // Update GitHub link
         sidebarGithubLink.href = project.github;
+
+        // Show a live demo link when the project provides one
+        if (project.website) {
+          sidebarWebsiteLink.href = project.website;
+          sidebarWebsiteLink.hidden = false;
+        } else {
+          sidebarWebsiteLink.hidden = true;
+        }
         
         // Show sidebar
         sidebar.classList.add('active');
         overlay.classList.add('active');
+      }
+    });
+
+    card.addEventListener('keydown', function(event) {
+      if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault();
+        this.click();
       }
     });
   });

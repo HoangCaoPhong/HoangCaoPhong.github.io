@@ -11,6 +11,76 @@ author_profile: true
 
 {% include base_path %}
 
+<style>
+  .publication-list {
+    display: grid;
+    gap: 1.25rem;
+    margin-top: 1.25rem;
+  }
+
+  .publication-card {
+    padding: 1.4rem 1.5rem;
+    border: 1px solid var(--global-border-color);
+    border-left: 4px solid var(--global-base-color);
+    border-radius: 6px;
+    background: var(--global-bg-color);
+  }
+
+  .publication-card .archive__item-title {
+    margin: 0 0 0.75rem;
+    font-size: 1.2rem;
+    line-height: 1.4;
+  }
+
+  .publication-card .archive__item-excerpt {
+    margin-bottom: 0;
+  }
+
+  .publication-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.45rem 0.75rem;
+    margin: 0 0 0.7rem;
+    color: var(--global-text-color);
+    font-size: 0.9rem;
+  }
+
+  .publication-meta .publication-status {
+    display: inline-flex;
+    padding: 0.2rem 0.55rem;
+    border-radius: 999px;
+    background: var(--global-base-color);
+    color: #fff;
+    font-size: 0.78rem;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 0.01em;
+  }
+
+  .publication-authors {
+    margin: 0 0 0.7rem;
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  @media (max-width: 600px) {
+    .publication-card {
+      padding: 1.1rem;
+    }
+
+    .publication-meta {
+      display: block;
+    }
+
+    .publication-meta > span {
+      display: block;
+      margin-bottom: 0.4rem;
+    }
+
+  }
+</style>
+
 <!-- New style rendering if publication categories are defined -->
 {% if site.publication_category %}
   {% for category in site.publication_category  %}
@@ -21,16 +91,22 @@ author_profile: true
       {% endif %}
       {% unless title_shown %}
         <h2>{{ category[1].title }}</h2><hr />
+        <div class="publication-list">
         {% assign title_shown = true %}
       {% endunless %}
-      {% include archive-single.html %}
+      <div class="publication-card">
+        {% include archive-single.html hide_citation=true %}
+      </div>
     {% endfor %}
+    {% if title_shown %}</div>{% endif %}
   {% endfor %}
 {% else %}
+  <div class="publication-list">
   {% for post in site.publications reversed %}
-    {% include archive-single.html %}
+    <div class="publication-card">
+      {% include archive-single.html hide_citation=true %}
+    </div>
   {% endfor %}
+  </div>
 {% endif %}
-
-
 
