@@ -6,7 +6,7 @@ author_profile: true
 
 ## About
 
-I am a B.Sc. student pursuing the Computer Science – Artificial Intelligence track at the Vietnam National University, Ho Chi Minh City University of Science (HCMUS). My interests focus on **Machine Learning**, **Cyber Security**, **Computer Vision**, **Natural Language Processing**, and **Deep Learning**
+I am a **CS/AI-oriented student** majoring in **Computer Vision and Intelligent Cybernetics** at the Vietnam National University, Ho Chi Minh City University of Science (HCMUS). My interests focus on **Machine Learning**, **Cyber Security**, **Computer Vision**, **Natural Language Processing**, and **Deep Learning**
 
 I am currently involved in research activities at the **UIT Information Security Lab (InSecLab)**. I am particularly interested in building end-to-end, deployable AI systems that bridge research ideas and real-world applications.
 
